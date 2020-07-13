@@ -4,7 +4,7 @@
 ## **Git Instructions**
 
 1. Fork this Repository
-    * [fork](https://help.github.com/articles/fork-a-repo/) this repository to your personal github account
+   
     * [clone](https://help.github.com/articles/cloning-a-repository/) **your** `forked` repository to your local machine
     * Write the code to make all the tests pass. See below for instructions.
       * MAKE SURE YOUR CODE COMPILES
