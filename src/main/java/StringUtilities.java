@@ -37,7 +37,9 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        return null;
+
+        return word.charAt(word.length()/2);
+        //return null;
     }
 
     /**
@@ -46,7 +48,18 @@ public class StringUtilities {
      * @return `value` with char of value `charToRemove` removed
      */
     public String removeCharacter(String value, Character charToRemove) {
-        return null;
+
+        char[] storeCharArray = value.toCharArray();
+        StringBuilder storeAfterRemoving= new StringBuilder();
+
+        for (int i = 0; i < storeCharArray.length; i++)
+        {
+            if(storeCharArray[i] != charToRemove)
+                storeAfterRemoving.append(storeCharArray[i]);
+        }
+
+        return storeAfterRemoving.toString();
+
     }
 
     /**
