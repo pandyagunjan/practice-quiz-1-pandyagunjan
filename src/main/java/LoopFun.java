@@ -25,7 +25,8 @@ public class LoopFun
        * @return Upper case string of the first letter of each word
        */
       public String acronym(String phrase) {
-          char[] storeCharArray = phrase.toCharArray();
+          String toUpperCase = phrase.toUpperCase();
+          char[] storeCharArray = toUpperCase.toCharArray();
           StringBuilder storeReverse= new StringBuilder();
 
           for (int i = 0 ;i < storeCharArray.length; i++)
@@ -33,7 +34,7 @@ public class LoopFun
               if(i==0)
               storeReverse.append(storeCharArray[i]);
           else
-              if(storeCharArray[i] == " ")
+              if(storeCharArray[i] == ' ')
            storeReverse.append(storeCharArray[i+1]);
          }
           return storeReverse.toString();
